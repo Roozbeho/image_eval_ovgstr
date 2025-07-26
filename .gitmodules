@@ -1,0 +1,3 @@
+[submodule "OvSGTR"]
+	path = OvSGTR
+	url = https://github.com/gpt4vision/OvSGTR.git
