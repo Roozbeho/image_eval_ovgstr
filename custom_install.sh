@@ -2,13 +2,11 @@
 echo "install torch, torchvision, torchaudio (edit this line for your CUDA version)"
 pip install torch==2.3.0+cu121 torchvision==2.3.0+cu121 torchaudio==0.18.0 -f https://download.pytorch.org/whl/torch_stable.html
 
-echo "Cloning OvSGTR repo"
-if [ ! -d "OvSGTR" ]; then
-    git clone https://github.com/gpt4vision/OvSGTR.git
-fi
-cd OvSGTR
+echo "initializing OvSGTR submodule"
+git submodule update --init --recursive
 
 echo "installing requirements"
+cd OvSGTR
 pip install -r requirements.txt
 
 echo "installing GroundingDino"
