@@ -9,7 +9,7 @@ This project allows you to generate **scene graphs** from **custom single images
 
 
 ```bash
-git clone https://github.com/Roozbeho/image_eval_ovgstr.git
+git clone --recurse-submodules https://github.com/Roozbeho/image_eval_ovgstr.git
 
 ```
 
